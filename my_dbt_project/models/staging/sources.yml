@@ -1,10 +1,19 @@
 version: 2
 
+
 sources:
-  - name: silver
-    database: ANALYTICS
-    schema: MAIN
+  - name: MOVIELENS
+    schema: RAW
     tables:
-      - name: silver_customers
-      - name: silver_orders
-      - name: silver_order_items
+     - name: r_movies
+       identifier: raw_movies
+     - name: r_ratings
+       identifier: raw_ratings
+     - name: r_tags
+       identifier: raw_tags
+     - name: r_genome_tags
+       identifier: raw_genome_tags
+     - name: r_genome_scores
+       identifier: raw_genome_scores
+     - name: r_links
+       identifier: raw_links
