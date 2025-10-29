@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: silver
+    database: ANALYTICS
+    schema: MAIN
+    tables:
+      - name: silver_customers
+      - name: silver_orders
+      - name: silver_order_items

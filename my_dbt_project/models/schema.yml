@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: stg_customers
+    columns:
+      - name: customer_id
+        tests:
+          - unique
+          - not_null
+
+  - name: fact_sales
+    columns:
+      - name: total_order_value
+        tests:
+          - not_null
